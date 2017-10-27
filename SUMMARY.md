@@ -18,10 +18,10 @@
   * [函数](javascriptru-ge-men/han-shu.md)
   * [类和继承](javascriptru-ge-men/lei.md)
   * Proxy和Relflect
-  * [Promise](javascriptru-ge-men/promise.md)
   * [generators](javascriptru-ge-men/generators.md)
-  * [定时器](javascriptru-ge-men/ding-shi-qi.md)
+  * [Promise](javascriptru-ge-men/promise.md)
   * async/await
+  * [定时器](javascriptru-ge-men/ding-shi-qi.md)
   * 模块
   * [标准库](javascriptru-ge-men/biao-zhun-ku.md)
 * [CSS](css.md)
