@@ -25,8 +25,12 @@
   * 模块
   * [标准库](javascriptru-ge-men/biao-zhun-ku.md)
 * [CSS](css.md)
+  * css基础
+  * less -- css预编译
 * [HTML](chapter1/html.md)
-* DOM和BOM
+  * [常用html标签](chapter1/html/chang-yong-html-biao-qian.md)
+  * [html5了没](chapter1/html/html5le-mei.md)
+* [DOM和BOM](domhe-bom.md)
 
 ## 组件化开发
 
@@ -48,6 +52,7 @@
 ## 前端开发用到的轮子
 
 * [常用的轮子](qian-duan-kai-fa-yong-dao-de-lun-zi/chang-yong-de-lun-zi.md)
+* axios
 * [Lodash](qian-duan-kai-fa-yong-dao-de-lun-zi/lodash.md)
 * [moment.js](qian-duan-kai-fa-yong-dao-de-lun-zi/momentjs.md)
 * echart
@@ -55,6 +60,6 @@
 
 ## 前端构建工具
 
-* [webpack](qian-duan-gou-jian-gong-ju/webpack.md)
 * babel
+* [webpack](qian-duan-gou-jian-gong-ju/webpack.md)
 
