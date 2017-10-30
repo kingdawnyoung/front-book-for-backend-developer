@@ -33,6 +33,7 @@
 * [MV\*\*开发](zu-jian-hua-kai-fa/mvkai-fa.md)
 * [vue](zu-jian-hua-kai-fa/vueji-chu.md)
   * [开始使用vue](zu-jian-hua-kai-fa/vueji-chu/kai-shi-shi-yong-vue.md)
+  * vue组件
   * [Vuex](zu-jian-hua-kai-fa/vuex.md)
   * [vue-router](zu-jian-hua-kai-fa/vue-router.md)
 * element-ui 一套完整的组件
