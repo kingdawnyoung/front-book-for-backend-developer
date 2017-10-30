@@ -40,7 +40,7 @@
   * vue组件
   * [Vuex](zu-jian-hua-kai-fa/vuex.md)
   * [vue-router](zu-jian-hua-kai-fa/vue-router.md)
-* element-ui 一套完整的组件
+* element-ui 一套完整的组件库
 
 ## JavaScript也可以写服务端
 
