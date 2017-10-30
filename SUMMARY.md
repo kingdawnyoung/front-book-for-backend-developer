@@ -9,20 +9,20 @@
 * [前端做些什么](chapter1.md)
 * [JavaScript](javascriptru-ge-men.md)
   * [变量和数据类型](javascriptru-ge-men/bian-liang-he-shu-ju-lei-xing.md)
-  * 条件和循环
-  * 数值和字符串
+  * [条件和循环](javascriptru-ge-men/tiao-jian-he-xun-huan.md)
+  * [数值和字符串](javascriptru-ge-men/shu-zhi-he-zi-fu-chuan.md)
   * [对象和数组](javascriptru-ge-men/dui-xiang.md)
-  * 结构赋值
+  * [结构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
   * [Symbol](javascriptru-ge-men/symbo.md)
-  * Set和Map
+  * [Set和Map](javascriptru-ge-men/sethe-map.md)
   * [函数](javascriptru-ge-men/han-shu.md)
   * [类和继承](javascriptru-ge-men/lei.md)
-  * Proxy和Relflect
+  * [Proxy和Relflect](javascriptru-ge-men/proxyhe-relflect.md)
   * [generators](javascriptru-ge-men/generators.md)
   * [Promise](javascriptru-ge-men/promise.md)
-  * async/await
+  * [async/await](javascriptru-ge-men/asyncawait.md)
   * [定时器](javascriptru-ge-men/ding-shi-qi.md)
-  * 模块
+  * [模块](javascriptru-ge-men/mo-kuai.md)
   * [标准库](javascriptru-ge-men/biao-zhun-ku.md)
 * [CSS](css.md)
   * css基础
