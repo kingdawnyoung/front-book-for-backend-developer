@@ -33,7 +33,7 @@ bar = 2//error, constant不可以改变值
 
 #### var VS. let & const
 
-let和const是块级作用域， 称之为`暂时性死区`（temporal dead zone）
+let和const是块级作用域， 称之为`暂时性死区`（temporal dead zone），简称TDZ
 
 ```js
 //var example
@@ -62,12 +62,13 @@ let b = 2;//error, 变量b已经存在
 let a = 3;//error, 变量a已经存在
 const a = 3;//error, 变量a已经存在
 
+//在TDZ可以声明重复变量
 {
     let a = 3;
     console.log(a);
 }
 {
-    const = 3;
+    const a = 3;
     console.log(a);
 }
 ```
