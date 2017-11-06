@@ -154,7 +154,7 @@ s.endsWith('!') // true
 s.includes('o') // true
 ```
 
-.repeat\(n\)方法返回一个新字符串，表示将原字符串重复`n`次
+.repeat\(n\) 方法返回一个新字符串，表示将原字符串重复`n`次
 
 ```js
 'x'.repat(3) // 'xxx'
@@ -163,6 +163,18 @@ s.includes('o') // true
 //如果是负数或者Infinity，会报错
 'x'.repeat(Infinity) // error,Invalid count value
 'x'.repeat(-1) // error,Invalid count value
+```
+
+.padStart\(\)，.padEnd\(\) 字符串补全长度
+
+```js
+//padStart()用于头部补全
+'x'.padStart(5, 'ab') // 'ababx'
+'x'.padStart(4, 'ab') // 'abax'
+
+//padEnd()用于尾部补全
+'x'.padEnd(5, 'ab') // 'xabab'
+'x'.padEnd(4, 'ab') // 'xaba'
 ```
 
 
