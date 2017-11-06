@@ -36,10 +36,11 @@ Number.isInteger(25) // true
 Number.isInteger(25.0) // true, ps：js整数和浮点数是同样的储存方法
 ```
 
-.toFixed\(n\)转化为字符串并保留n位小数
+.toFixed\(n\)将数值转化为字符串并保留n位小数
 
 ```
 3.1415926532653589932384626.toFixed(2)//3.14
+(3).toFixed(2)//3.00
 ```
 
 #### NaN
@@ -87,11 +88,7 @@ Infinity + 1//Infinity
 Number.isFinite(Infinity - 1)//true
 ```
 
-
-
 ### 字符串
-
-
 
 
 
