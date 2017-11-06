@@ -22,6 +22,8 @@ console.log(foo, bar);//undefined, 1
 
 #### const
 
+变量指向的那个内存地址不得改动
+
 ```js
 const foo;//error，const必须要有初始值
 const bar = 1;
@@ -31,7 +33,7 @@ bar = 2//error, constant不可以改变值
 
 #### var VS. let & const
 
-let和const是块级作用域
+let和const是块级作用域， 称之为`暂时性死区`（temporal dead zone）
 
 ```js
 //var example
@@ -47,7 +49,7 @@ console.log(a);//output, 1
 console.log(b, c);//error, b 没有定义
 ```
 
-let和const不可以重复定义
+let和const不可以重复暂时性死区
 
 ```js
 var a = 1;
@@ -59,7 +61,6 @@ let b = 2;//error, 变量b已经存在
 
 let a = 3;//error, 变量a已经存在
 const a = 3;//error, 变量a已经存在
-
 ```
 
 
