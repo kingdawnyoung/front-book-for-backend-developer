@@ -154,10 +154,15 @@ s.endsWith('!') // true
 s.includes('o') // true
 ```
 
-.repeat\(\)方法返回一个新字符串，表示将原字符串重复`n`次
+.repeat\(n\)方法返回一个新字符串，表示将原字符串重复`n`次
 
 ```js
 'x'.repat(3) // 'xxx'
+//参数会被取整
+'x'.repeat('3.3') // 'xxx'
+//如果是负数或者Infinity，会报错
+'x'.repeat(Infinity) // error,Invalid count value
+'x'.repeat(-1) // error,Invalid count value
 ```
 
 
