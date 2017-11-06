@@ -75,7 +75,5 @@ const a = 3;//error, 变量a已经存在
 
 #### 声明变量的其他三种方式
 
-`function`, `class`, `import`
-
-
+`function`，`class`， `import`
 
