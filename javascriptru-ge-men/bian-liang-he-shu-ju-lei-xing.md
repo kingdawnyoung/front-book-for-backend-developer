@@ -22,10 +22,21 @@ console.log(foo, bar);//undefined, 1
 
 #### const
 
-```
-const foo;
+```js
+const foo;//error，const必须要有初始值
 const bar = 1;
-console.log(foo, bar);//undefined, 1
+console.log(foo, bar);//output, undefined, 1
+bar = 2//error, constant不可以改变值
+```
+
+#### var VS. let & const
+
+let和const是块级作用域
+
+```js
+{
+    var 
+}
 ```
 
 
