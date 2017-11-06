@@ -14,9 +14,22 @@
 35e-2//0.35
 35E+2
 35E-2
+
+//最大值
+Number.MAX_VALUE
+//最小值
+Number.MIN_VALUE
 ```
 
-#### 
+#### NaN
+
+表示非数值
+
+```js
+Math.sqrt(-1) 
+```
+
+
 
 
 
