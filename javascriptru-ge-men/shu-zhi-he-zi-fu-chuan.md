@@ -154,5 +154,11 @@ s.endsWith('!') // true
 s.includes('o') // true
 ```
 
+.repeat\(\)方法返回一个新字符串，表示将原字符串重复`n`次
+
+```js
+'x'.repat(3) // 'xxx'
+```
+
 
 
