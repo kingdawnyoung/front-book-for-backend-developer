@@ -184,8 +184,20 @@ s.includes('o') // true
 
 ```js
 let name = "World";
-`Hello, ${name}`
+`Hello, ${name}`//'Hello, World'
 ```
+
+```js
+//可以进行计算
+let x = 1, y = 2;
+`${x} + ${y} = ${x + y}`// '1 + 2 = 3'
+```
+
+    //能够调用函数
+    function fn(){
+        return 3;
+    }
+    `${fn()}`//'3'
 
 
 
