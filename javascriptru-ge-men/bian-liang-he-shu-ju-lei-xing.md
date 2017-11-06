@@ -49,7 +49,7 @@ console.log(a);//output, 1
 console.log(b, c);//error, b 没有定义
 ```
 
-let和const不可以重复暂时性死区
+let和const不可以重复声明
 
 ```js
 var a = 1;
