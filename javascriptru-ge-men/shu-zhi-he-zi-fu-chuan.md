@@ -32,7 +32,14 @@ Number.parseInt('0b11')
 Number.isInterger是否为整数
 
 ```js
+Number.isInteger(25) // true
+Number.isInteger(25.0) // true, ps：js整数和浮点数是同样的储存方法
+```
 
+.toFixed\(n\)转化为字符串并保留n位小数
+
+```
+3.1415926532653589932384626.toFixed(2)//3.14
 ```
 
 #### NaN
@@ -71,7 +78,7 @@ Number.isNaN(true)//false
 表示无穷大
 
 ```js
-Infinity + 1//Infinity 
+Infinity + 1//Infinity
 ```
 
 判断Infinity的方法isFinity或者Number.isFinity
@@ -79,6 +86,12 @@ Infinity + 1//Infinity
 ```js
 Number.isFinite(Infinity - 1)//true
 ```
+
+
+
+### 字符串
+
+
 
 
 
