@@ -34,9 +34,32 @@ bar = 2//error, constant不可以改变值
 let和const是块级作用域
 
 ```js
+//var example
 {
-    var 
+    var a = 1;
 }
+console.log(a);//output, 1
+
+{
+    let b = 1;
+    const c = 2;
+}
+console.log(b, c);//error, b 没有定义
+```
+
+let和const不可以重复定义
+
+```js
+var a = 1;
+var a = 2;
+console.log(a);//output, 2
+
+let b = 1;
+let b = 2;//error, 变量b已经存在
+
+let a = 3;//error, 变量a已经存在
+const a = 3;//error, 变量a已经存在
+
 ```
 
 
