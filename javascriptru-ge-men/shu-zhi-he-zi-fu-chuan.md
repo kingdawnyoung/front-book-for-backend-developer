@@ -180,11 +180,22 @@ s.includes('o') // true
 'x'.padStart(4) // '    x'
 ```
 
-模版字符串 ${param}
+模版字符串 
 
 ```js
+//使用反引号标识这是字符串模版， 使用${param}嵌入变量
 let name = "World";
 `Hello, ${name}`//'Hello, World'
+```
+
+```js
+//折行和空格将被保留
+`
+<ul>
+    <li>1</li>
+    <li>1</li>
+</ul>
+`
 ```
 
 ```js
@@ -215,6 +226,26 @@ function fn(){
 //还可以嵌套
 let x=1, y=2, z = 3;
 `${`${x + y} === ${z}`}`//3 === 3
+```
+
+布尔值，true \|\| false
+
+```bash
+返回一个bool值
+两元逻辑运算符： && (And)，|| (Or)
+前置逻辑运算符： ! (Not)
+相等运算符：===，!==，==，!=
+比较运算符：>，>=，<，<=
+```
+
+```bash
+下面值会被转为false，其他值都视为true
+undefined
+null
+false
+0
+NaN
+""或''（空字符串）
 ```
 
 
