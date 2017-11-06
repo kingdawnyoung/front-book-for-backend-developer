@@ -61,6 +61,15 @@ let b = 2;//error, 变量b已经存在
 
 let a = 3;//error, 变量a已经存在
 const a = 3;//error, 变量a已经存在
+
+{
+    let a = 3;
+    console.log(a);
+}
+{
+    const = 3;
+    console.log(a);
+}
 ```
 
 
