@@ -21,15 +21,64 @@ Number.MAX_VALUE
 Number.MIN_VALUE
 ```
 
+pasrInt、parseFloat或者Number.parseInt、Number.parseFloat
+
+```js
+parseInt('3.14')//3
+parseFloat('3.14#')//3
+Number.parseInt('0b11')
+```
+
+Number.isInterger是否为整数
+
+```js
+
+```
+
 #### NaN
 
 表示非数值
 
 ```js
-Math.sqrt(-1) 
+5 - 'x'
+0 / 0
+Math.sqrt(-1)
+//但NaN依然是数值类型
+typeof NaN; // output, 'number'
 ```
 
+运算规则
 
+```js
+NaN === NaN //false
+[NaN].indexOf(NaN) //false, ps:数组indexOf判断逻辑使用的是===运算符
+Boolean[NaN] //false
+//NaN与任何数运算都得到NaN
+NaN + 32//NaN
+```
+
+判断NaN的方法isNaN或者Number.isNaN
+
+```js
+isNaN(NaN)//true
+isNaN(123)//false
+Number.isNaN('123')//false
+Number.isNaN(true)//false
+```
+
+#### **Infinity**
+
+表示无穷大
+
+```js
+Infinity + 1//Infinity 
+```
+
+判断Infinity的方法isFinity或者Number.isFinity
+
+```js
+Number.isFinite(Infinity - 1)//true
+```
 
 
 
