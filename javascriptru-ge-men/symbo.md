@@ -74,7 +74,25 @@ sym + 2 // TypeError
 
 由于每个Symbol值都是唯一的， 这就意味着当Symbol作为对象的属性名时将保证不会出现同名的情况，继而保证对象的属性不会被改写或者覆盖。
 
+```js
+let mySymbol = Symbol();
 
+// 第一种写法
+let foo = {};
+foo[mySymbol] = 'Hello!';
+
+// 第二种写法
+let foo = {
+  [mySymbol]: 'Hello!'
+};
+
+// 第三种写法
+let foo = {};
+Object.defineProperty(a, mySymbol, { value: 'Hello!' });
+
+// 以上写法都得到同样结果
+foo[mySymbol] // "Hello!"
+```
 
 
 
