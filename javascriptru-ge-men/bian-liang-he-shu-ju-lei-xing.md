@@ -77,3 +77,33 @@ const a = 3;//error, 变量a已经存在
 
 `function`，`class`， `import`
 
+### 数据类型
+
+#### 数值\(number\)
+
+整数和小数（比如1和3.14）
+
+#### 字符串\(String\)
+
+字符组成的文本（比如”Hello World”）
+
+#### 布尔值\(Boolean\)
+
+`true`（真）和`false`（假）两个特定值
+
+#### undefined
+
+标识未定义或不存在
+
+#### null
+
+表示无值
+
+#### 对象\(Object\)
+
+各种值的组成的集合
+
+#### Symbol
+
+表示独一无二的值
+
