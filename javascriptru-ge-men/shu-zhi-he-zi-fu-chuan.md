@@ -175,6 +175,9 @@ s.includes('o') // true
 //padEnd()用于尾部补全
 'x'.padEnd(5, 'ab') // 'xabab'
 'x'.padEnd(4, 'ab') // 'xaba'
+
+//第二个参数默认补空格
+'x'.padStart(4) // '    x'
 ```
 
 
