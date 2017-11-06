@@ -13,6 +13,33 @@ new Object(123) instanceof Number
 // true
 ```
 
+#### 属性简洁表示法
+
+```js
+//属性简写
+const foo = 'bar';
+const baz = {foo};
+baz // {foo: "bar"}
+
+// 等同于
+const baz = {foo: foo};
+```
+
+```js
+//方法的简写
+const o = {
+  method() {
+    return "Hello!";
+  }
+};
+//等同于
+const o = {
+  method: function() {
+    return "Hello!";
+  }
+};
+```
+
 #### Object\(\)函数
 
 Object本身也是也是一个函数， 可以将任何值转化为对象
@@ -102,6 +129,10 @@ hasOwnProperty 判断某个属性是否为当前对象自身的属性，还是�
 isPrototypeOf 判断当前对象是否为另一个对象的原型。
 
 propertyIsEnumerable 判断某个属性是否可枚举
+
+
+
+### 数组
 
 
 
