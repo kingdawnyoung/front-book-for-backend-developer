@@ -182,5 +182,10 @@ s.includes('o') // true
 
 模版字符串 ${param}
 
+```js
+let name = "World";
+`Hello, ${name}`
+```
+
 
 
