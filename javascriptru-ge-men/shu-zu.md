@@ -52,5 +52,35 @@ arr['m'] = 1
 //所以推荐for, while, for...of循环
 ```
 
+#### 数组的空位
+
+```
+//前面的空位的例子
+let arr = ['a', 'b', 'c']
+arr[100]//这是有97个空位
+
+arr = ['a', ,'c']//中间也产生了一个空位
+arr[2]//空位返回undefined
+
+
+arr = ['a', 'b', ]//这不会产生空位，数组末位的逗号会被默认移除
+```
+
+```
+//空位虽然返回undefined但与赋值undefined还是不一样的
+let arr = ['a', ,'c']
+arr.forEach(function (x, i) {
+  console.log(i + '. ' + x);//输出忽略空位
+})
+
+
+for (var i in arr) {
+  console.log(i);//输出忽略空位
+
+}
+
+Object.keys(arr)//[]， 输出忽略空位 
+```
+
 
 
