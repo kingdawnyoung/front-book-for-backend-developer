@@ -10,7 +10,7 @@
 * [JavaScript](javascriptru-ge-men.md)
   * [变量和数据类型](javascriptru-ge-men/bian-liang-he-shu-ju-lei-xing.md)
   * [数值，字符串和布尔值](javascriptru-ge-men/shu-zhi-he-zi-fu-chuan.md)
-  * 解构赋值
+  * [解构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
   * [对象和数组](javascriptru-ge-men/dui-xiang.md)
   * [条件和循环](javascriptru-ge-men/tiao-jian-he-xun-huan.md)
   * [结构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
