@@ -54,7 +54,7 @@ arr['m'] = 1
 
 #### 数组的空位
 
-```
+```js
 //前面的空位的例子
 let arr = ['a', 'b', 'c']
 arr[100]//这是有97个空位
@@ -66,7 +66,7 @@ arr[2]//空位返回undefined
 arr = ['a', 'b', ]//这不会产生空位，数组末位的逗号会被默认移除
 ```
 
-```
+```js
 //空位虽然返回undefined但与赋值undefined还是不一样的
 let arr = ['a', ,'c']
 arr.forEach(function (x, i) {
@@ -84,6 +84,17 @@ Object.keys(arr)//[]， 输出忽略空位
 #### 扩展运算符
 
 扩展运算符（spread）是三个点（`...`），将一个数组转为用逗号分隔的参数序列。
+
+```
+let arr = ['a', 'b', 'c']
+console.log(...arr) //output， a b c
+```
+
+```js
+function fn(v, w, x, y, z) { }
+const args = [0, 1];
+fn(-1, ...args, 2, ...[3]);
+```
 
 
 
