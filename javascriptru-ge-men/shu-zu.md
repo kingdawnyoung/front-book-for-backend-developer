@@ -167,9 +167,22 @@ let arrayLike = {
 let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
 ```
 
-```
+```js
 let nodeList = document.querySelectorAll('div');
-Array.from(nodeList )
+Array.from(nodeList)
+```
+
+Array.from 还提供第二个参数，作用类似于数组的`map`方法，用来对每个元素进行处理，将处理后的值放入返回的数组。
+
+```js
+Array.from([1, , 2, , 3], (n) => n || 0)
+// [1, 0, 2, 0, 3]
+```
+
+只要有一个原始的数据结构，你就可以先对它的值进行处理，然后转成规范的数组结构，进而就可以使用数量众多的数组方法。
+
+```js
+Array.from({ length: 2 }, () => 'xx')
 ```
 
 
