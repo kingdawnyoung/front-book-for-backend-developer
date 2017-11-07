@@ -138,7 +138,16 @@ target // {a:1, b:4, c:6}
 ```js
 //同样可以处理数组，这时将数组视为对象
 Object.assign([1, 2, 3], [4, 5]) // [4, 5, 3]
+```
 
+```js
+//只能进行值的复制，如果要复制的值是一个取值函数，那么将求值后再复制。
+const source = {
+  get foo() { return 1 }
+};
+const target = {};
+
+Object.assign(target, source)
 ```
 
 **Object.keys\(\)**， 只返回可枚举的属性
