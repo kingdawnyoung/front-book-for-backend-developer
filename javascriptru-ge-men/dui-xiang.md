@@ -150,9 +150,26 @@ const target = {};
 Object.assign(target, source)
 ```
 
+```
+作用
+1.扩展对象属性方法
+2.浅克隆
+3.合并对象
+4.为对象指定默认值（作为组件的options体现特别明显）
+```
+
 **Object.keys\(\)**， 只返回可枚举的属性
 
+Object.values\(\)，返回对象自身的（不含继承的）所有可遍历（enumerable）属性的键值。
+
 Object.getOwnPropertyNames\(\)，返回还返回不可枚举的属性名
+
+Object.entries，方法返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键值对数组。
+
+```js
+const obj = { foo: 'bar', baz: 42 };
+Object.entries(obj) // [ ["foo", "bar"], ["baz", 42] ]
+```
 
 **对象属性模型的相关方法**
 
