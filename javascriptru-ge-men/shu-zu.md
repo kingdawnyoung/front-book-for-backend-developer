@@ -38,7 +38,7 @@ arr['a'] = 1;
 arr.length // 100
 ```
 
-#### for...in 
+#### for...in
 
 循环和数组的遍历
 
@@ -49,10 +49,8 @@ for (var i in a) {
 }
 //还会遍历非数字键
 arr['m'] = 1
-//所以推荐for...of
+//所以推荐for, while, for...of循环
 ```
-
-
 
 
 
