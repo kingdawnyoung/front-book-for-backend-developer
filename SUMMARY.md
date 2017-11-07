@@ -11,8 +11,9 @@
   * [变量和数据类型](javascriptru-ge-men/bian-liang-he-shu-ju-lei-xing.md)
   * [数值，字符串和布尔值](javascriptru-ge-men/shu-zhi-he-zi-fu-chuan.md)
   * [解构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
-  * [对象和数组](javascriptru-ge-men/dui-xiang.md)
   * [条件和循环](javascriptru-ge-men/tiao-jian-he-xun-huan.md)
+  * [数组](javascriptru-ge-men/shu-zu.md)
+  * [对象](javascriptru-ge-men/dui-xiang.md)
   * [结构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
   * [Symbol](javascriptru-ge-men/symbo.md)
   * [Set和Map](javascriptru-ge-men/sethe-map.md)
@@ -24,7 +25,7 @@
   * [async/await](javascriptru-ge-men/asyncawait.md)
   * [定时器](javascriptru-ge-men/ding-shi-qi.md)
   * [模块](javascriptru-ge-men/mo-kuai.md)
-  * [标准库](javascriptru-ge-men/biao-zhun-ku.md)
+  * 数组
 * [CSS](css.md)
   * css基础
   * less -- css预编译
