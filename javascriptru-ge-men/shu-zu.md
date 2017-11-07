@@ -193,7 +193,7 @@ Array.from({ length: 2 }, () => 'xx') // ["xx", "xx"]
 Array.of(1, false, undefined) //[1, false, undefined]
 ```
 
-#### find\(\)和findIndex\(\)
+#### find, findIndex
 
 数组实例的`find`方法，用于找出第一个符合条件的数组成员。它的参数是一个回调函数，所有数组成员依次执行该回调函数，直到找出第一个返回值为`true`的成员，然后返回该成员。如果没有符合条件的成员，则返回`undefined`。
 
@@ -203,7 +203,7 @@ Array.of(1, false, undefined) //[1, false, undefined]
 
 数组实例的`findIndex`方法的用法与`find`方法非常类似，返回第一个符合条件的数组成员的位置，如果所有成员都不符合条件，则返回`-1`。
 
-#### fill\(item, startIndex, endIndex\)
+#### fill
 
 填充一个数组
 
@@ -509,6 +509,7 @@ numbers.map(function (item, index, array) {
 });
 // [2, 3, 4]
 ```
+
 #### forEach
 
 也是遍历数组的所有成员，执行某种操作
@@ -519,7 +520,7 @@ numbers.map(function (item, index, array) {
 });
 ```
 
-#### filter, find
+#### filter
 
 `filter`参数是一个函数，所有数组成员依次执行该函数，返回结果为true的成员组成一个新数组返回。该方法不会改变原数组。
 
@@ -528,14 +529,6 @@ numbers.map(function (item, index, array) {
   return item > 3;
 });
 //[4, 5]
-```
-
-`find`参数是一个函数，返回结果为true的第一个成员
-``` js
-[1, 2, 3, 4, 5].filter(function (item) {
-  return item > 3;
-});
-//4
 ```
 
 #### some，every
