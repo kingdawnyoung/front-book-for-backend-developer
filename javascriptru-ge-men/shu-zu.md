@@ -203,3 +203,5 @@ Array.of(1, false, undefined) //[1, false, undefined]
 
 数组实例的`findIndex`方法的用法与`find`方法非常类似，返回第一个符合条件的数组成员的位置，如果所有成员都不符合条件，则返回`-1`。
 
+#### fill\(\)
+
