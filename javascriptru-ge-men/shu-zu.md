@@ -113,7 +113,6 @@ let arr1 = ['a', 'b'];
 let arr2 = ['c'];
 let arr3 = ['d', 'e'];
 [...arr1, ...arr2, ...arr3] //[ 'a', 'b', 'c', 'd', 'e' ]
-
 ```
 
 ```js
@@ -123,10 +122,35 @@ first // 1
 rest  // [2, 3, 4, 5]
 ```
 
-```
+```js
 //将字符串转为数组
-[...'hello']
-// [ "h", "e", "l", "l", "o" ]
+[...'hello'] // [ "h", "e", "l", "l", "o" ]
+
+```
+
+```js
+//将类数组对象转化为数组
+let nodeList = document.querySelectorAll('div');
+let array = [...nodeList];
+```
+
+```js
+//扩展运算符内部调用的是数据结构的 Iterator 接口，因此只要具有 Iterator 接口的对象，都可以使用扩展运算符，比如 Map 结构。
+let map = new Map([
+  [1, 'one'],
+  [2, 'two'],
+  [3, 'three'],
+]);
+
+let arr = [...map.keys()]; // [1, 2, 3]
+
+const go = function*(){
+  yield 1;
+  yield 2;
+  yield 3;
+};
+
+[...go()] // [1, 2, 3]
 ```
 
 
