@@ -8,8 +8,35 @@ arr[0] // 'a'
 
 //任何类型的数据，都可以放入数组。
 let arr2 = [{}, true, null, undefined, function(){}, arr ]
+```
+
+#### 数组也是对象
+
+```js
 //数组实际上也是对象
-typeof arr2 // object
+let arr = ['a', 'b', 'c'];
+typeof arr // object
+Object.keys(arr)//["1", "2", "3"]
+
+```
+
+#### **.length**
+
+数组的`length`属性，返回数组的成员数量。
+
+```js
+let arr = ['a', 'b', 'c'];
+arr.length // 3
+
+//length属性的值总是比最大的那个整数键大1
+arr[100] = 1
+arr.length // 101
+//length值也是可写的，数组的成员数量会自动减少或增加到到length设置的值。
+arr.length = 2 // 2 items
+arr.length = 100 // 100 items
+//数组本质上是对象，所以我们也可以为数组添加其他属相，但这不会影响length值
+arr['a'] = 1;
+arr.length // 100
 ```
 
 
