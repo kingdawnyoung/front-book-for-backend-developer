@@ -125,11 +125,10 @@ rest  // [2, 3, 4, 5]
 ```js
 //将字符串转为数组
 [...'hello'] // [ "h", "e", "l", "l", "o" ]
-
 ```
 
 ```js
-//将类数组对象转化为数组
+//实现了 Iterator 接口的对象
 let nodeList = document.querySelectorAll('div');
 let array = [...nodeList];
 ```
@@ -151,6 +150,26 @@ const go = function*(){
 };
 
 [...go()] // [1, 2, 3]
+```
+
+#### Array.from\(\)
+
+方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括ES6新增的数据结构Set和Map）
+
+```js
+let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    length: 3
+};
+
+let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
+```
+
+```
+let nodeList = document.querySelectorAll('div');
+Array.from(nodeList )
 ```
 
 
