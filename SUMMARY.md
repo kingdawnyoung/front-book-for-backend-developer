@@ -14,7 +14,6 @@
   * [条件和循环](javascriptru-ge-men/tiao-jian-he-xun-huan.md)
   * [数组](javascriptru-ge-men/shu-zu.md)
   * [对象](javascriptru-ge-men/dui-xiang.md)
-  * [结构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
   * [Symbol](javascriptru-ge-men/symbo.md)
   * [Set和Map](javascriptru-ge-men/sethe-map.md)
   * [函数](javascriptru-ge-men/han-shu.md)
