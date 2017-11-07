@@ -27,8 +27,8 @@
   * [模块](javascriptru-ge-men/mo-kuai.md)
   * 数组
 * [CSS](css.md)
-  * css基础
-  * less -- css预编译
+  * [css基础](css/cssji-chu.md)
+  * [less -- css预编译](css/less-cssyu-bian-yi.md)
 * [HTML](chapter1/html.md)
   * [常用html标签](chapter1/html/chang-yong-html-biao-qian.md)
   * [html5了没](chapter1/html/html5le-mei.md)
