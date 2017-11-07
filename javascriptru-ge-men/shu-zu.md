@@ -1,4 +1,4 @@
-### 数组
+数组
 
 数组（array）是按次序排列的一组值。每个值的位置都有编号（从0开始），整个数组用方括号表示。
 
@@ -17,7 +17,6 @@ let arr2 = [{}, true, null, undefined, function(){}, arr ]
 let arr = ['a', 'b', 'c'];
 typeof arr // object
 Object.keys(arr)//["1", "2", "3"]
-
 ```
 
 #### **.length**
@@ -38,6 +37,22 @@ arr.length = 100 // 100 items
 arr['a'] = 1;
 arr.length // 100
 ```
+
+#### for...in 
+
+循环和数组的遍历
+
+```js
+let arr = ['a', 'b', 'c'];
+for (var i in a) {
+  console.log(a[i]);
+}
+//还会遍历非数字键
+arr['m'] = 1
+//所以推荐for...of
+```
+
+
 
 
 
