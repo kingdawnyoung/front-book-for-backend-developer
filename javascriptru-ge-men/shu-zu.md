@@ -185,5 +185,13 @@ Array.from([1, , 2, , 3], (n) => n || 0)
 Array.from({ length: 2 }, () => 'xx') // ["xx", "xx"]
 ```
 
+#### Array.of
+
+方法用于将一组值，转换为数组
+
+```js
+Array.of(1, false, undefined) //[1, false, undefined]
+```
+
 
 
