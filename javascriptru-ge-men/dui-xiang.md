@@ -40,6 +40,24 @@ const o = {
 };
 ```
 
+#### 属性名表达式
+
+```js
+//通常对象字面量的表达方式
+var obj = {
+  foo: true,
+  bar: 123
+};
+
+//我们现在可以使用表达式作为对象的属性名
+let propKey = 'foo';
+
+let obj = {
+  [propKey]: true,
+  ['a' + 'bc']: 123
+};
+```
+
 #### Object\(\)函数
 
 Object本身也是也是一个函数， 可以将任何值转化为对象
@@ -81,6 +99,20 @@ Object(fn) === fn // true
 ```
 
 #### Object静态方法
+
+Object.is\(\)， 它用来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。
+
+```js
+Object.is('123', '123') //true
+Object.is({}, {}) //false
+//与===差异点在于+0与-0之间 和NaN之间
+
++0 === -0 //true
+NaN === NaN // false
+
+Object.is(+0, -0) // false
+Object.is(NaN, NaN) // true
+```
 
 Object.keys\(\)， 只返回可枚举的属性
 
@@ -129,8 +161,6 @@ hasOwnProperty 判断某个属性是否为当前对象自身的属性，还是�
 isPrototypeOf 判断当前对象是否为另一个对象的原型。
 
 propertyIsEnumerable 判断某个属性是否可枚举
-
-
 
 ### 数组
 
