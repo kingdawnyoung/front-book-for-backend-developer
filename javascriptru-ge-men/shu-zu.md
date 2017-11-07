@@ -73,13 +73,12 @@ arr.forEach(function (x, i) {
   console.log(i + '. ' + x);//输出忽略空位
 })
 
-
 for (var i in arr) {
   console.log(i);//输出忽略空位
 
 }
 
-Object.keys(arr)//[]， 输出忽略空位 
+Object.keys(arr)//[]， 输出忽略空位
 ```
 
 
