@@ -1,7 +1,7 @@
 ### 类
 
 ```js
-//顶一个类
+//意义一个类
 class Clazz{
     constructor(x, y) {
         this.x = x;
