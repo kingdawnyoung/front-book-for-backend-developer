@@ -360,6 +360,9 @@ const go = function*(){
 
 [...go()] // [1, 2, 3]
 ```
+#### Array.isArray()
+
+判断变量值是否为数组
 
 #### Array.from\(\)
 
