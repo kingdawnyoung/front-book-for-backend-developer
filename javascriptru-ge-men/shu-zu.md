@@ -454,11 +454,11 @@ Array.of(1, false, undefined) //[1, false, undefined]
 
 方法用于多个数组的合并。它将新数组的成员，添加到原数组的尾部，然后返回一个新数组，原数组不变。
 
-#### reverse()
+#### reverse
 
 方法用于颠倒数组中元素的顺序，返回改变后的数组。注意，该方法将改变原数组。
 
-#### slice(startIndex, uptoIndex)
+#### slice(startIndex, upToIndex)
 
 方法用于提取原数组的一部分，返回一个新数组，原数组不变
 
