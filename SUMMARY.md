@@ -25,7 +25,6 @@
   * [async/await](javascriptru-ge-men/asyncawait.md)
   * [定时器](javascriptru-ge-men/ding-shi-qi.md)
   * [模块](javascriptru-ge-men/mo-kuai.md)
-  * 数组
 * [CSS](css.md)
   * [css基础](css/cssji-chu.md)
   * [less -- css预编译](css/less-cssyu-bian-yi.md)
