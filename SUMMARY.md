@@ -17,7 +17,7 @@
   * [函数](javascriptru-ge-men/han-shu.md)
   * [Symbol](javascriptru-ge-men/symbo.md)
   * [Set和Map](javascriptru-ge-men/sethe-map.md)
-  * [迭代器]((javascriptru-ge-men/iterator.md))
+  * [迭代器](javascriptru-ge-men/iterator.md)
   * [generators](javascriptru-ge-men/generators.md)
   * [类和继承](javascriptru-ge-men/lei.md)
   * [Proxy和Relflect](javascriptru-ge-men/proxyhe-relflect.md)
