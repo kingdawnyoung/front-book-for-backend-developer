@@ -193,9 +193,9 @@ Symbol.keyFor(s2) // undefined
 
 **Symbol.split**
 
-**Symbol.iterator**
+**Symbol.iterator** 指向该对象的默认遍历器方法
 
-**Symbol.toPrimitive**
+**Symbol.toPrimitive** 对象的Symbol.toPrimitive属性，指向一个方法。该对象被转为原始类型的值时，会调用这个方法，返回该对象对应的原始类型值。
 
 **Symbol.toStringTag**
 
