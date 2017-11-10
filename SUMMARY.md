@@ -35,7 +35,7 @@
 
 ## 组件化开发
 
-* [MV\*\*开发](zu-jian-hua-kai-fa/mvkai-fa.md)
+* [MVVM](zu-jian-hua-kai-fa/mvkai-fa.md)
 * [vue](zu-jian-hua-kai-fa/vueji-chu.md)
   * [开始使用vue](zu-jian-hua-kai-fa/vueji-chu/kai-shi-shi-yong-vue.md)
   * vue组件

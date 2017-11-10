@@ -83,11 +83,12 @@ foo[mySymbol] = 'Hello!';
 
 // 第二种写法
 let foo = {
+  [mySymbol] : 'Hello';
 };
 
 // 第三种写法
 let foo = {};
-Object.defineProperty(a, mySymbol, { value: 'Hello!' });
+Object.defineProperty(foo, mySymbol, { value: 'Hello!' });
 
 // 以上写法都得到同样结果
 foo[mySymbol] // "Hello!"
@@ -115,7 +116,7 @@ objectSymbols // [Symbol(a), Symbol(b)]
 另一个新的API，`Reflect.ownKeys`方法可以返回所有类型的键名，包括常规键名和 Symbol 键名。
 
 ```js
-et obj = {
+let obj = {
   enum: 2,
   nonEnum: 3
 };
