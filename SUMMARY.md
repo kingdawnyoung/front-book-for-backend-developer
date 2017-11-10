@@ -7,7 +7,7 @@
 ## 前端基础
 
 * [前端做些什么](chapter1.md)
-* [JavaScript](javascriptru-ge-men.md)
+* JavaScript
   * [变量和数据类型](javascriptru-ge-men/bian-liang-he-shu-ju-lei-xing.md)
   * [数值，字符串和布尔值](javascriptru-ge-men/shu-zhi-he-zi-fu-chuan.md)
   * [解构赋值](javascriptru-ge-men/jie-gou-fu-zhi.md)
@@ -25,10 +25,10 @@
   * [async/await](javascriptru-ge-men/asyncawait.md)
   * [定时器](javascriptru-ge-men/ding-shi-qi.md)
   * [模块](javascriptru-ge-men/mo-kuai.md)
-* [CSS](css.md)
+* CSS
   * [css基础](css/cssji-chu.md)
   * [less -- css预编译](css/less-cssyu-bian-yi.md)
-* [HTML](chapter1/html.md)
+* HTMLchapter1/html.md
   * [html5了没](chapter1/html/html5le-mei.md)
   * [常用html标签](chapter1/html/chang-yong-html-biao-qian.md)
 * [DOM和BOM](domhe-bom.md)
@@ -36,12 +36,12 @@
 ## 组件化开发
 
 * [MVVM](zu-jian-hua-kai-fa/mvkai-fa.md)
-* [vue](zu-jian-hua-kai-fa/vueji-chu.md)
+* vue
   * [开始使用vue](zu-jian-hua-kai-fa/vueji-chu/kai-shi-shi-yong-vue.md)
-  * vue组件
-  * [Vuex](zu-jian-hua-kai-fa/vuex.md)
-  * [vue-router](zu-jian-hua-kai-fa/vue-router.md)
-* element-ui 一套完整的组件库
+  * [vue组件](zu-jian-hua-kai-fa/vueji-chu/vue-components.md)
+  * [Vuex](zu-jian-hua-kai-fa/vueji-chu/vuex.md)
+  * [vue-router](zu-jian-hua-kai-fa/vueji-chu/vue-router.md)
+* [element-ui 一套完整的组件库](zu-jian-hua-kai-fa/element-ui.md)
 
 ## JavaScript也可以写服务端
 
