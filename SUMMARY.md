@@ -38,6 +38,9 @@
 * [MVVM](zu-jian-hua-kai-fa/mvkai-fa.md)
 * vue
   * [开始使用vue](zu-jian-hua-kai-fa/vueji-chu/kai-shi-shi-yong-vue.md)
+  * [vue模板，条件和列表渲染](zu-jian-hua-kai-fa/vueji-chu/template-condition-list.md)
+  * [计算属性和观察者](zu-jian-hua-kai-fa/vueji-chu/computed-watch.md)
+  * [事件处理和表单输入](zu-jian-hua-kai-fa/vueji-chu/event-form.md)
   * [vue组件](zu-jian-hua-kai-fa/vueji-chu/vue-components.md)
   * [Vuex](zu-jian-hua-kai-fa/vueji-chu/vuex.md)
   * [vue-router](zu-jian-hua-kai-fa/vueji-chu/vue-router.md)
@@ -53,11 +56,11 @@
 ## 前端开发用到的轮子
 
 * [常用的轮子](qian-duan-kai-fa-yong-dao-de-lun-zi/chang-yong-de-lun-zi.md)
-* axios
+* [axios](qian-duan-kai-fa-yong-dao-de-lun-zi/axios.md)
 * [Lodash](qian-duan-kai-fa-yong-dao-de-lun-zi/lodash.md)
 * [moment.js](qian-duan-kai-fa-yong-dao-de-lun-zi/momentjs.md)
 * echart
-* qs
+* [qs](qian-duan-kai-fa-yong-dao-de-lun-zi/qs.md)
 
 ## 前端构建工具
 
