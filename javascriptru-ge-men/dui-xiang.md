@@ -122,6 +122,7 @@ Object.getOwnPropertyDescriptor(obj, 'foo')
 ES6 规定，所有 Class 的原型的方法都是不可枚举的。
 
 #### 属性的遍历
+
 1. `for...in`
 循环遍历对象自身的和继承的可枚举属性（不含 `Symbol` 属性）。
 2. `Object.keys(obj)`
@@ -132,6 +133,7 @@ ES6 规定，所有 Class 的原型的方法都是不可枚举的。
 返回一个数组，包含对象自身的所有 `Symbol` 属性的键名。
 5. `Reflect.ownKeys(obj)`
 返回一个数组，包含对象自身的所有键名，不管键名是 `Symbol` 或字符串，也不管是否可枚举。
+
 #### Object静态方法
 
 **Object.is\(\)**， 它用来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。
