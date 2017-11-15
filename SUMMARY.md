@@ -28,7 +28,7 @@
 * CSS
   * [css基础](css/cssji-chu.md)
   * [less -- css预编译](css/less-cssyu-bian-yi.md)
-* HTMLchapter1/html.md
+* html
   * [html5了没](chapter1/html/html5le-mei.md)
   * [常用html标签](chapter1/html/chang-yong-html-biao-qian.md)
 * [DOM和BOM](domhe-bom.md)
