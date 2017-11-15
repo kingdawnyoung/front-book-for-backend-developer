@@ -88,7 +88,7 @@ Infinity + 1//Infinity
 Number.isFinite(Infinity - 1)//true
 ```
 
-### 字符串
+### 字符串(string)
 
 ```js
 //字符串就是零个或多个排在一起的字符，放在单引号或双引号之中。
@@ -157,7 +157,7 @@ s.includes('o') // true
 .repeat\(n\) 方法返回一个新字符串，表示将原字符串重复`n`次
 
 ```js
-'x'.repat(3) // 'xxx'
+'x'.repeat(3) // 'xxx'
 //参数会被取整
 'x'.repeat('3.3') // 'xxx'
 //如果是负数或者Infinity，会报错
@@ -228,7 +228,7 @@ let x=1, y=2, z = 3;
 `${`${x + y} === ${z}`}`//3 === 3
 ```
 
-布尔值，true \|\| false
+### 布尔值(boolean)，true \|\| false
 
 ```bash
 返回一个bool值
