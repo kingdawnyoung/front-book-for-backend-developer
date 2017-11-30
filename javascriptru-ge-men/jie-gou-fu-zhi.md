@@ -73,7 +73,7 @@ function fn(){
     console.log('call');
     return 2;
 }
-let [x = f()] = [1];
+let [x = fn()] = [1];
 ```
 
 #### 对象的解构赋值

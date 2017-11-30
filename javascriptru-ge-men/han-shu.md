@@ -45,7 +45,7 @@ f() // 2
 
 ```js
 function twice(x){
-    return x * 2;
+  return x * 2;
 }
 
 twice(2) //4
@@ -58,7 +58,7 @@ twice(3) //6
 
 ```js
 function fn(a, b){
-    return a;
+  return a;
 }
 
 fn() // undefined

@@ -67,3 +67,7 @@
 * babel
 * [webpack](qian-duan-gou-jian-gong-ju/webpack.md)
 
+## 附录
+* [splice和slice](appendix/spliceAndSlice.md)
+* [理解JavaScript的作用域和上下文](appendix/contextAndScope.md)
+

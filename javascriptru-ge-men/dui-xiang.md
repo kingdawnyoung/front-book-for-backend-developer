@@ -50,10 +50,12 @@ var obj = {
 };
 
 //我们现在可以使用表达式作为对象的属性名
-let propKey = 'foo';
+let foo = "baz";
 
 let obj = {
+  [foo]: 123
 };
+//{baz: 123}
 ```
 
 #### Object\(\)函数
