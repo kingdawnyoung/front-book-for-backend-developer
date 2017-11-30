@@ -30,9 +30,13 @@ Clazz === Clazz.prototype.constructor // true
 Clazz.prototype.toString.toString()
 
 //我们可以通过高Object.assign给Clazz添加更多方法
-Object.assign(Clazz.prototype,{
-    say(msg = "德玛西亚"){console.log(msg)},
-    sing(msg = "最炫民族风"){console.log(msg)}
+Object.assign(Clazz.prototype, {
+    say(msg = "德玛西亚"){
+      console.log(msg)
+    },
+    sing(msg = "最炫民族风"){
+      console.log(msg)
+    }
 });
 
 (new Clazz(1, 2)).say();
@@ -67,7 +71,7 @@ clazz.__proto__.hasOwnProperty('toString') // true
 let clazz1 = new Clazz(1, 2);
 let clazz2 = new Clazz(1, 2);
 
-clazz1 === clazz2 //true
+clazz1.__proto__ === clazz2.__proto__ //true
 ```
 
 #### Class表达式
@@ -97,9 +101,41 @@ let ins = new class{...}()
 
 #### 不存在变量提升
 
+```js
+new Clazz();//报错 Clazz 未定义
+class Clazz{...}
+```
+
 #### this的指向
 
 类的方法内部如果含有this，它默认指向类的实例。
+
+#### Class 的取值行数(getter)和取值函数(setter)
+
+“类”的内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为
+
+```js
+class Clazz{
+  get prop(){
+    return "123";
+  }
+  set prop(value){
+    console.log("setter:" + value);
+  }
+}
+
+let inst = new Clazz();
+
+inst.prop = 456
+// setter:456
+
+inst.prop;
+// 123
+
+//春曲子函数实际上这自在属性的Descriptor对象上
+let descriptor = Object.getOwnPropertyDescriptor(Clazz.prototype, "prop");
+console.log(descriptor)
+```
 
 #### Class 的静态方法
 
@@ -148,4 +184,34 @@ class Bar extends Foo {
 }
 
 Bar.classMethod() // "hello, too"
+```
+
+### 继承
+
+Class 可以通过extends关键字实现继承
+
+```js
+class Parent {
+  say(){
+    console.log("I am parent")
+  }
+
+  watch(){
+    console.log("watch TV");
+  }
+}
+
+class Child extends Parent {
+  constructor(){
+    super()
+  }
+
+  say(){
+    console.log("I am child")
+  }
+}
+
+let child = new Child();
+child.say();
+child.watch();
 ```

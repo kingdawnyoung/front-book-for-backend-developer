@@ -58,44 +58,18 @@ let obj = {
 //{baz: 123}
 ```
 
-#### Object\(\)函数
-
-Object本身也是也是一个函数， 可以将任何值转化为对象
+#### getter和setter
 
 ```js
-Object() // 返回一个空对象
-Object() instanceof Object // true
-
-Object(undefined) // 返回一个空对象
-Object(undefined) instanceof Object // true
-
-Object(null) // 返回一个空对象
-Object(null) instanceof Object // true
-
-Object(1) // 等同于 new Number(1)
-Object(1) instanceof Object // true
-Object(1) instanceof Number // true
-
-Object('foo') // 等同于 new String('foo')
-Object('foo') instanceof Object // true
-Object('foo') instanceof String // true
-
-Object(true) // 等同于 new Boolean(true)
-Object(true) instanceof Object // true
-Object(true) instanceof Boolean // true
-
-//如果Object参数也是个对象， 他总是返回原来对象
-var arr = [];
-Object(arr) // 返回原数组
-Object(arr) === arr // true
-
-var obj = {};
-Object(obj) // 返回原对象
-Object(obj) === obj // true
-
-var fn = function () {};
-Object(fn) // 返回原函数
-Object(fn) === fn // true
+var obj = {
+  _name: '',
+  get name() {
+    return this._name
+  },
+  set name(n) {
+    this._name = n;
+  }
+}
 ```
 
 #### Object的可枚举性
@@ -135,6 +109,46 @@ ES6 规定，所有 Class 的原型的方法都是不可枚举的。
 返回一个数组，包含对象自身的所有 `Symbol` 属性的键名。
 5. `Reflect.ownKeys(obj)`
 返回一个数组，包含对象自身的所有键名，不管键名是 `Symbol` 或字符串，也不管是否可枚举。
+
+#### Object\(\)函数
+
+Object本身也是也是一个函数， 可以将任何值转化为对象
+
+```js
+Object() // 返回一个空对象
+Object() instanceof Object // true
+
+Object(undefined) // 返回一个空对象
+Object(undefined) instanceof Object // true
+
+Object(null) // 返回一个空对象
+Object(null) instanceof Object // true
+
+Object(1) // 等同于 new Number(1)
+Object(1) instanceof Object // true
+Object(1) instanceof Number // true
+
+Object('foo') // 等同于 new String('foo')
+Object('foo') instanceof Object // true
+Object('foo') instanceof String // true
+
+Object(true) // 等同于 new Boolean(true)
+Object(true) instanceof Object // true
+Object(true) instanceof Boolean // true
+
+//如果Object参数也是个对象， 他总是返回原来对象
+var arr = [];
+Object(arr) // 返回原数组
+Object(arr) === arr // true
+
+var obj = {};
+Object(obj) // 返回原对象
+Object(obj) === obj // true
+
+var fn = function () {};
+Object(fn) // 返回原函数
+Object(fn) === fn // true
+```
 
 #### Object静态方法
 
@@ -202,8 +216,6 @@ Object.assign(target, source)
 
 Object.values\(\)，返回对象自身的（不含继承的）所有可遍历（enumerable）属性的键值。
 
-Object.getOwnPropertyNames\(\)，还返回不可枚举的属性名
-
 Object.entries()，方法返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（enumerable）属性的键值对数组。
 
 ```js
@@ -213,13 +225,28 @@ Object.entries(obj) // [ ["foo", "bar"], ["baz", 42] ]
 
 **对象属性模型的相关方法**
 
-Object.getOwnPropertyDescriptor\(\)
+Object.getOwnPropertyDescriptor\(\) 方法返回指定对象上一个自有属性对应的属性描述符
 
-Object.defineProperty\(\)
+Object.defineProperty\(\) 在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象。
 
-Object.defineProperties\(\)
+```js
+//给对象obj新增一个属性name
+let obj = {};
+Object.defineProperty(obj, 'name', {
+  configurable: true,
+  enumerable: true,
+  get: function() {
+      return _name
+  },
+  set: function(n) {
+      _name = n
+  }
+})
+```
 
-Object.getOwnPropertyNames\(\)
+Object.defineProperties(obj, props)
+
+Object.getOwnPropertyNames\(\) 方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性但不包括Symbol值作为名称的属性）组成的数组。
 
 **控制对象状态的方法**
 
@@ -239,7 +266,8 @@ Object.isFrozen\(\)
 
 Object.create\(\)
 
-Object.getPrototypeOf\(\)
+Object.getPrototypeOf() 返回对象的原型
+
 
 #### Object对象实例方法
 
@@ -254,7 +282,4 @@ hasOwnProperty 判断某个属性是否为当前对象自身的属性，还是�
 isPrototypeOf 判断当前对象是否为另一个对象的原型。
 
 propertyIsEnumerable 判断某个属性是否可枚举
-
-
-
 
