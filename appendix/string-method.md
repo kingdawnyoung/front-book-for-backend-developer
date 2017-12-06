@@ -1,4 +1,4 @@
-# String类型的方法
+# String的方法
 
 ## String.prototype.charAt()
 
