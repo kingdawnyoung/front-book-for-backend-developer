@@ -18,4 +18,40 @@ vue可以简化数据绑定，允许你简单的复用组件。
 
 ## 安装
 
-你可以直接
+你可以直接通过`script`引入
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+```
+
+或者通过npm整合webpack模块大宝漆使用
+
+```bash
+> npm install vue
+```
+
+官方也提供了命令行工具，用来快速构建大型单页面应用。该工具开箱即用，自带热重载、静态检查，还可以构建生产环境级别代码。所以我们更推荐使用命令行工具开发vue项目。
+
+```bash
+# 全局安装vue-cli
+> npm install -g ve-cli
+# 创建一个基于webpack模版的新项目
+> vue init webpack project-name
+# 安装依赖
+>cd project-name
+>npm install
+>npm run dev
+```
+
+## 部署
+
+如果你是通过引入`script`方式开发代码，直接上传文件到服务器即可
+
+如果你是使用了构建工具，在部署前你需要预编译处理好，然后把编译好的数据传到服务器或者CDN。预编译可以直接将代码编译成渲染函数而不是原始的模版字符串，这样我们保证在性能上就有了初步保证。
+
+```bash
+# 与编辑代码
+>npm build
+# 加report可以看到每个文件的都有哪些某块组成, 以及体积等信息
+>npm build --report
+```
