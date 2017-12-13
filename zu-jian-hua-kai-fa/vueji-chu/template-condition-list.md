@@ -41,7 +41,7 @@ Mustache语法不能作用在HTML特性上，这时我们会使用`v-bind`指令
 ```html
 {{ 1 + 1 }}
 {{ ok ? 'YES' : 'NO'}}
-{{ new Array(12).fill('_').join('') }}
+{{ new Array(12).fill('-').join('') }}
 <div v-bind:id="'list-' + id"></div>
 ```
 
