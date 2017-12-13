@@ -69,9 +69,9 @@ Mustache语法不能作用在HTML特性上，这时我们会使用`v-bind`指令
 
 指令也可以添加修饰符(Modifiers)用于指出一个指令应该已特殊的形式绑定。修饰符已半角句号`.`指明特殊后缀。
 
-···html
+```html
 <button v-on:click.prevent="clickHandler">Don't click me</button>
-···
+```
 
 上面例子中`.prevent`修饰符告诉`v-on`指令对于出发事件调用时执行`event.preventDefault()`语句
 
