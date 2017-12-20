@@ -42,6 +42,17 @@ vue可以简化数据绑定，允许你简单的复用组件。
 >npm install
 >npm run dev
 ```
+## Vue实例
+
+```js
+var vm = new Vue({
+  // 选项
+});
+```
+
+## 生命周期
+
+![](https://cn.vuejs.org/images/lifecycle.png)
 
 ## 部署
 
