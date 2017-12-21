@@ -54,6 +54,12 @@ var vm = new Vue({
 
 ![](https://cn.vuejs.org/images/lifecycle.png)
 
+## 开发工具
+
+为`VS Code`提供了[Vetur](https://vuejs.github.io/vetur/)
+
+为浏览器提供了[Vue.js devtools](https://github.com/vuejs/vue-devtools)
+
 ## 部署
 
 如果你是通过引入`script`方式开发代码，直接上传文件到服务器即可
