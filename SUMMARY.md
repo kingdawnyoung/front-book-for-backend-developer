@@ -42,6 +42,7 @@
   * [计算属性和观察者](zu-jian-hua-kai-fa/vueji-chu/computed-watch.md)
   * [事件处理和表单输入](zu-jian-hua-kai-fa/vueji-chu/event-form.md)
   * [vue组件](zu-jian-hua-kai-fa/vueji-chu/vue-components.md)
+  * [vue组件(补)](zu-jian-hua-kai-fa/vueji-chu/vue-components-append.md)
   * [Vuex](zu-jian-hua-kai-fa/vueji-chu/vuex.md)
   * [vue-router](zu-jian-hua-kai-fa/vueji-chu/vue-router.md)
 * [element-ui 一套完整的组件库](zu-jian-hua-kai-fa/element-ui.md)
