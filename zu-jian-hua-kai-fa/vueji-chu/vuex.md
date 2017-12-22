@@ -184,3 +184,70 @@ store.dispatch({
   amount: 10
 })
 ```
+
+## Module
+
+由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex允许我们将store风格层**模块(module)**。每个模块都拥有自己的state、mutation、action、getter甚至是嵌套子模块。
+
+```js
+const moduleA = {
+  state: {...},
+  mutations: {...},
+  actions: {...},
+  getters: {...}
+};
+
+const moduleB = {
+  state: {...},
+  mutations: {...},
+  actions: {...},
+  getters: {...}
+};
+
+const store = new Vuex.Store({
+  modules: {
+    a: moduleA,
+    b: moduleB
+  }
+});
+```
+
+```js
+store.state.a // -> moduleA 的状态
+store.state.b // -> moduleB 的状态
+```
+
+对于模块内部的 mutation 和 getter，接收的第一个参数是模块的局部状态对象。
+
+```js
+const moduleA = {
+  state: {
+    count: 0
+  },
+  //mutation
+  mutations: {
+    increment (state) {
+      // 这里的 `state` 对象是模块的局部状态
+      state.count++
+    }
+  },
+  //getter
+  getters: {
+    doubleCount (state) {
+      return state.count * 2
+    }
+  }
+}
+```
+
+同样在模块内部的action，局部状态通过`context.state`暴露出来，根节点状态则为`context.rootState`
+
+```js
+const moduleA = {
+  actions: {
+    incrementAction({state, commit, rootState}){
+      //...
+    }
+  }
+};
+```
