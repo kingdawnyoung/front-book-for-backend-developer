@@ -43,6 +43,7 @@ store.commit('increment')
 console.log(store.state.count) // -> 1
 
 ```
+
 ## State
 
 Vuex 使用单一状态树，用一个对象就包含了全部的应用层级状态。这也意味着，每个应用将仅仅包含一个 store 实例。
@@ -103,7 +104,7 @@ getter亦可以返回一个函数，来实现给getter传参
 
 ```js
 getter:{
-  getOption(state){
+  getOptions(state){
     return (value)=>{
       return state.options.find((item)=>{
         return item.value === value
@@ -167,7 +168,7 @@ Action 类似于 mutation，不同在于：
 ```js
 //actions
 actions: {
-  increment (context) {
+  incrementAsync (context) {
     context.commit('increment')
   }
 }
@@ -176,7 +177,7 @@ actions: {
 分发Action
 
 ```js
-store.dispatch('increment');
+store.dispatch('incrementAsync');
 
 // 以对象形式分发
 store.dispatch({
@@ -250,4 +251,130 @@ const moduleA = {
     }
   }
 };
+```
+
+对于模块内部的 getter，根节点状态会作为第三个参数暴露出来：
+
+```js
+const moduleA = {
+  // ...
+  getters: {
+    sumWithRootCount (state, getters, rootState) {
+      return state.count + rootState.count
+    }
+  }
+}
+```
+
+默认情况下action、mutation 和 getter是注册在全局命名空间的，这样多个模块可以对同一mutation和action做出响应。如果希望模块具有更高的封装性和复用性，可以通过添加 `namespaced: true` 的方式使其成为命名空间模块。当模块被注册后，它的所有 getter、action 及 mutation 都会自动根据模块注册的路径调整命名。[实例代码](https://gitee.com/kingdawnyoung/codes/o3wj62rd1ihyxt4ncpubk39)
+
+如果你希望使用全局 state 和 getter，rootState 和 rootGetter 会作为第三和第四参数传入 getter，也会通过 context 对象的属性传入 action。
+
+若需要在全局命名空间内分发 action 或提交 mutation，将 { root: true } 作为第三参数传给 dispatch 或 commit 即可。
+
+```js
+modules: {
+  foo: {
+    namespaced: true,
+
+    getters: {
+      // 在这个模块的 getter 中，`getters` 被局部化了
+      // 你可以使用 getter 的第四个参数来调用 `rootGetters`
+      someGetter (state, getters, rootState, rootGetters) {
+        getters.someOtherGetter // -> 'foo/someOtherGetter'
+        rootGetters.someOtherGetter // -> 'someOtherGetter'
+      },
+      someOtherGetter: state => { ... }
+    },
+
+    actions: {
+      // 在这个模块中， dispatch 和 commit 也被局部化了
+      // 他们可以接受 `root` 属性以访问根 dispatch 或 commit
+      someAction ({ dispatch, commit, getters, rootGetters }) {
+        getters.someGetter // -> 'foo/someGetter'
+        rootGetters.someGetter // -> 'someGetter'
+
+        dispatch('someOtherAction') // -> 'foo/someOtherAction'
+        dispatch('someOtherAction', null, { root: true }) // -> 'someOtherAction'
+
+        commit('someMutation') // -> 'foo/someMutation'
+        commit('someMutation', null, { root: true }) // -> 'someMutation'
+      },
+      someOtherAction (ctx, payload) { ... }
+    }
+  }
+}
+```
+
+## 辅助函数
+
+state的辅助函数`mapState`
+
+```js
+computed(){
+  ...Vuex.mapState({
+    optionsAlias: 'options',
+    optionsFn: state => state.options,
+    optionsComp(state) {
+      return state.options.length + this.num;
+    }
+  })
+}
+```
+
+当映射的计算属性的名称与 state 的子节点名称相同时，我们也可以给 mapState 传一个字符串数组。
+
+```js
+computed: mapState([
+  // 映射 this.count 为 store.state.count
+  'options'
+])
+```
+
+getter的辅助函数`mapGetters`
+
+```js
+computed: {
+  ...mapGetters([
+    'getOptions',
+    // ...
+  ])
+}
+```
+
+getter 属性另取一个名字
+
+```js
+mapGetters({
+  // 映射 `this.doneCount` 为 `store.getters.doneTodosCount`
+  getCustomOptions: 'getOptions'
+})
+```
+
+mutation的辅助函数`mapMutations`
+
+```js
+//...
+methods:{
+  ...mapMutations([
+    'increment', // 将 `this.increment()` 映射为 `this.$store.commit('increment')`
+  ]),
+  ...mapMutations({
+    add: 'increment' // 将 `this.add()` 映射为 `this.$store.commit('increment')`
+  })
+}
+```
+
+action的辅助函数`mapActions`
+
+```js
+// ...
+methods: {
+  ...mapActions([
+    'incrementAsync', // 将 `this.increment()` 映射为 `this.$store.dispatch('increment')`
+  ]),
+  ...mapActions({
+    addAsync: 'incrementAsync' // 将 `this.add()` 映射为 `this.$store.dispatch('increment')`
+  })
+}
 ```
