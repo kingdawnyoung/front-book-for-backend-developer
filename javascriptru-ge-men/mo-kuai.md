@@ -156,7 +156,7 @@ import "echart"
 除了指定加载某个输出值，还可以使用整体加载，即用星号（*）指定一个对象，所有输出值都加载在这个对象上面。
 
 ```js
-import * as moudle "./moudle"
+import * as moudle from "./moudle"
 console.log(moudle.foo, moudle.bar)//output 1 2
 ```
 

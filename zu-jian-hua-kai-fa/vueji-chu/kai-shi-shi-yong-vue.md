@@ -68,7 +68,7 @@ var vm = new Vue({
 
 ```bash
 # 与编辑代码
->npm build
+>npm run build
 # 加report可以看到每个文件的都有哪些某块组成, 以及体积等信息
->npm build --report
+>npm run build --report
 ```
