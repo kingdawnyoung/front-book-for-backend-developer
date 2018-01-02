@@ -68,3 +68,77 @@ element-ui为我们提供了布局容器，方便我们搭建快速搭建页面�
 按钮是最为常用的组件，element-ui的按钮组件为`<el-button>`。按钮也提供了一系列属性控制按钮的尺寸(size)、类型(type)、图标(icon)、状态(loading, disabled)等等
 
 ### 表单组件
+
+`<el-radio>` 单选按钮，`el-option`
+
+`<el-checkbox>` 单选按钮，`el-option`
+
+`<el-input>` 输入框
+
+`<el-select>` 选择框
+
+`<el-switch>` 开关
+
+`<el-slider>` 滑块
+
+`<el-time-picker>` 时间选择器，`<el-time-select>` 固定时间点，`is-range`
+
+`<el-date-picker>` 日期选择器，`type=year/month/date/week/datetime/datetimerange/daterange`
+
+`<el-date-time-picker>` 日期时间选择器，`type=year/month/date/week/datetime/datetimerange/daterange`
+
+`<el-upload>` 上传
+
+`<el-form>` 表单，`<el-form-item>`，`validate` 验证
+
+### 数据组件
+
+`<el-table>` 表格组件，`el-table-column` 列
+
+`<el-pagination>` 分页组件
+
+`<el-tree>` 树形控件
+
+`<el-tag>` 标签
+
+`<el-progress>` 进度条
+
+`<el-badge>` 标记
+
+### 通知类组件
+
+`<el-alert>` 警告
+
+`<el-loading>` 加载，`this.$loading()`
+
+`<el-message>` 消息提示，`this.$message()`、`this.$message.info()`、`this.$message.success()`、`this.$message.warning()`、`this.$message.error()`
+
+`MessageBox` 弹框，`this.$alert()`、`this.$confirm()`、`this.$prompt()`、`this.$msgbox()`
+
+`Notification` 通知，`this.$notify()`
+
+### 导航类组件
+
+`NavMenu` 导航菜单，`<el-menu>`、`<el-submenu>`、`<el-menu-item>`
+
+`<el-tabs>` 标签页，`<el-tab-pane>`
+
+`<el-breadcrumb>` 面包屑，`<el-breadcrumb-item>`
+
+`<el-dropdown>` 下拉菜单，`<el-dropdown-menu>`、`<el-dropdown-item>`
+
+`<el-steps>` 步骤条，`<el-step>`
+
+### 其他
+
+`<el-dialog>` 对话框，`visible`控制是否显示
+
+`<el-tooltip>` 文字提示
+
+`<el-popover>` 弹出框
+
+`<el-card>` 卡片
+
+`<el-carousel>` 走马灯
+
+`<el-collapse>` 折叠面板

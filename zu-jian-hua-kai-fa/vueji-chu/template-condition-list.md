@@ -355,7 +355,7 @@ this.person = Object.assign({}, this.person, {
 </ul>
 ```
 
-`v-for`和`v-if`可以组合使用，当他们处于统一节点时，`v-for`的优先级`v-if`更高，这意味着`v-if`将分别重复运行域每个`v-for`循环中。
+`v-for`和`v-if`可以组合使用，当他们处于统一节点时，`v-for`的优先级`v-if`更高，这意味着`v-if`将分别重复运行于每个`v-for`循环中。
 
 ```html
 <ul id="list">
