@@ -1,3 +1,5 @@
+
+{% raw %}
 # Vue模板，条件和列表渲染
 
 ## 模版
@@ -372,3 +374,6 @@ this.person = Object.assign({}, this.person, {
   <el-button v-for="item in items">{{item}}</el-button>
 </el-button-group>
 ```
+
+
+{% endraw %}

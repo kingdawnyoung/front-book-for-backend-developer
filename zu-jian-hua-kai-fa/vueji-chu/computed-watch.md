@@ -1,3 +1,5 @@
+{% raw %}
+<script src="http://static.jsbin.com/js/embed.min.js?4.1.1"></script>
 # 计算属性和观察者
 
 ## 计算属性
@@ -6,7 +8,7 @@ Vue模版内可以写一些表达式进行简单的技术，但放入太多逻�
 
 ```html
 <div id="example">
-  我是条下划线{{ line }}
+  我是条横线{{ line }}
 </div>
 ```
 
@@ -25,6 +27,8 @@ new Vue({
   }
 })
 ```
+
+<a class="jsbin-embed" href="http://jsbin.com/sagapec/4/embed">例子</a>
 
 这里我们生命而来一个计算属性`line`，用于将属性arr转化为下划线。我们像绑定普通属性一样绑定计算属性，Vue知道`line`依赖于`arr`，因此当`arr`发生改变时，所有依赖`arr`的绑定也会更新。我们使用声明的形式确定了这种依赖关系，而且没有任何副作用。
 
@@ -54,6 +58,7 @@ computed: {
   }
 }
 ```
+<a class="jsbin-embed" href="http://jsbin.com/sagapec/7/embed">例子</a>
 
 默认的计算属性只有获取值`getter`，不过需要时也可以设置值`setter`
 
@@ -104,3 +109,7 @@ new Vue({
   }
 })
 ```
+
+<a class="jsbin-embed" href="http://jsbin.com/xoruvum/2/embed">例子</a>
+
+{% endraw %}

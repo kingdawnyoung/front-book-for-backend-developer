@@ -1,3 +1,5 @@
+
+{% raw %}
 # 事件处理和表单输入
 
 ## 事件处理
@@ -230,3 +232,6 @@ Vue.config.keyCodes.f1 = 112
 <input v-model.trim="name" placeholder="输入名字">
 <p>Hello, {{ name || "某某"}}</p>
 ```
+
+
+{% endraw %}
