@@ -1,3 +1,5 @@
+{% raw %}
+
 # Vue组件
 
 组件可认为是HTML元素的扩展，封装可重用的代码。在加高层面上，组件就是自定义元素，Vue.js编译器为它添加特殊功能。
@@ -430,8 +432,9 @@ bus.$on("trigger", function(param){
   {{scope.text}}, 我是父组件的content
 </div>
 
-<!--可以直接通过结构获取text值-->
+<!--可以直接通过解构获取text值-->
 <div slot-scope="{ text }">
   {{text}}, 我是父组件的content
 </div>
 ```
+{% endraw %}

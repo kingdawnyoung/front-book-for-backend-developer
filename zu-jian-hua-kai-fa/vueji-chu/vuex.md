@@ -267,6 +267,7 @@ const moduleA = {
 ```
 
 默认情况下action、mutation 和 getter是注册在全局命名空间的，这样多个模块可以对同一mutation和action做出响应。如果希望模块具有更高的封装性和复用性，可以通过添加 `namespaced: true` 的方式使其成为命名空间模块。当模块被注册后，它的所有 getter、action 及 mutation 都会自动根据模块注册的路径调整命名。[实例代码](https://gitee.com/kingdawnyoung/codes/o3wj62rd1ihyxt4ncpubk39)
+<a class="jsbin-embed" href="http://jsbin.com/zucagoz/embed">例子</a>
 
 如果你希望使用全局 state 和 getter，rootState 和 rootGetter 会作为第三和第四参数传入 getter，也会通过 context 对象的属性传入 action。
 
@@ -378,3 +379,5 @@ methods: {
   })
 }
 ```
+
+<script src="https://static.jsbin.com/js/embed.min.js?4.1.1"></script>

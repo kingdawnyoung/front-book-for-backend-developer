@@ -233,5 +233,5 @@ Vue.config.keyCodes.f1 = 112
 <p>Hello, {{ name || "某某"}}</p>
 ```
 
-
+<script src="https://static.jsbin.com/js/embed.min.js?4.1.1"></script>
 {% endraw %}

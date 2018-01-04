@@ -1,5 +1,5 @@
 {% raw %}
-<script src="http://static.jsbin.com/js/embed.min.js?4.1.1"></script>
+<script src="https://static.jsbin.com/js/embed.min.js?4.1.1"></script>
 # 计算属性和观察者
 
 ## 计算属性
