@@ -66,4 +66,5 @@
 * [数组splice和slice](appendix/spliceAndSlice.md)
 * [String的方法](appendix/string-method.md)
 * [理解JavaScript的作用域和上下文](appendix/contextAndScope.md)
+* [编程风格](appendix/coding-style.md)
 
