@@ -10,11 +10,11 @@
    ```
 1. 变量命名应当采用驼峰命名格式，普通变量的第一个单词应当是一个名词，函数名第一个单词应当是动词
    ```js
-   let dialogShow = true;
+    let dialogShow = true;
 
-   function search() {
-     // do something
-   }
+    function search() {
+      // do something
+    }
    ```
 1. 初始化一个值尽量使用字面量
    ```js
@@ -39,9 +39,9 @@
    * 参数名之间应当在逗号之后保留一个空格。
    * 函数体应当保持一级缩进。
    ```js
-   function fn() {
-     //do something
-   }
+    function fn() {
+      // do something
+    }
    ```
 
 1. 多行对象声明
@@ -52,20 +52,20 @@
    * 结束的右大括号应当独占一行。
    * 对象作为函数参数时，起始大括号应当同函数名一行
    ```js
-   let obj = {
-     foo: 'foo',
-     bar: 'bar',
-     fn: function() {
-       //do something
-     },
-   };
+    let obj = {
+      foo: 'foo',
+      bar: 'bar',
+      fn: function() {
+        // do something
+      },
+    };
    ```
 
 1. 严格模式应当仅限于在函数内部使用 `'use strict'`
    ```js
    (function(){
      'use strict'
-   })()
+   })();
    ```
 
 1. 使用两个空格替代制表符的缩进，保证在不同编辑器有相同表现
@@ -73,7 +73,7 @@
 1. 当使用括号时，紧接左括号之后和紧接右括号之前不应该有空格
    ```js
    if(a & (b & c) > d){
-     //do something
+     // do something
    }
    ```
 1. 复合语句，使用大括号括起来的语句列表，比如`if`、`for`语句
@@ -87,20 +87,20 @@
    ```
 1. 使用 `===` 表示用于判断等于，使用 `!==` 用于判断不等
    ```js
-   //good
+   // good
    a === b;
    b !== c;
 
-   //bad
+   // bad
    a == b;
    b != c;
    ```
 1. 三元操作符应当仅仅用在条件赋值语句中，不要作为`if`语句的替代品
   ```js
-  //good
+  // good
   let a = condition ? c : d;
 
-  //bad
+  // bad
   let a = condition ? fn1() : fn2();
   ```
 1. 每一行一条语句，所有简单的语句都应该以分号（;）结束
@@ -121,7 +121,7 @@
 1. 多行注释符首行留空，每行`*`和注释内容之间保持一个空格
 1. 使用 `/*...*/` 对方法的定义进行注解，可以适当添加入参（@param）、出参（@returns）等说明。更多说明标签请参考JSDoc
    ```js
-   //good
+   // good
     /*
     * 方法
     * @param {string} arg1 参数1
@@ -131,8 +131,8 @@
       // do something
     }
 
-   //bad
-   //方法
+   // bad
+   // 方法
    function fn(arg1, arg2) {
      // do something
    }
@@ -142,15 +142,15 @@
    ```js
    _.find(arr, item => {...});
 
-   //good
+   // good
    arr.find(item => {...});
    ```
 1. 尽量使用标准通用的属性和方法
    ```js
-   //bad
+   // bad
    str[0];
 
-   //good
+   // good
    str.charAt(0)
    ```
 
@@ -163,19 +163,19 @@
 1. 静态字符串一律使用单引号或反引号，不使用双引号。动态字符串使用反引号。
 1. 尽量使用字符串模版进行字符串的拼接而不是加号，方便阅读和修改
    ```js
-   //bad
+   // bad
    '字符串' + a + b + c;
 
-   //good
+   // good
    `字符串${a}${b}${c}`;
    ```
 1. 使用数组成员对变量赋值时，优先使用解构赋值。
    ```js
-   //bad
+   // bad
    let a = arr[0],
      b = arr[1];
 
-   //good
+   // good
    let [a, b] = arr;
    ```
 1. 函数的参数如果是对象，优先使用解构赋值。
@@ -185,9 +185,9 @@
        b = arg.b;
    }
 
-   //good
+   // good
    function fn({a, b}) {
-     //do something
+     // do something
    }
    ```
 1. 如果函数返回多个值，优先使用对象的解构赋值，而不是数组的解构赋值。
@@ -198,7 +198,7 @@
      foo: 'foo',
      bar: 'bar',
      fn: function() {
-       //do something
+       // do something
      },
    };
    ```
@@ -219,7 +219,7 @@
      foo,
      bar,
      fn() {
-       //do something
+       // do something
      },
    };
    ```
@@ -234,12 +234,12 @@
    ```
 1. 箭头函数取代 `.bind`，不应再用 self/_this/that 绑定 this。
    ```js
-   //bad
+   // bad
    arr.map(function (item) {
-     //do something
+     // do something
    }.bind(arr));
 
-   //good
+   // good
    arr,map(item => {...});
    ```
 1. 简单的、单行的、不会复用的函数，建议采用箭头函数。如果函数体较为复杂，行数较多，还是应该采用传统的函数写法。
@@ -256,12 +256,12 @@
 1. 使用`export`取代`module.exports`。
 1. 不要在模块输入中使用通配符(*)。
    ```js
-   //bad
+   // bad
    import * as param from "./module";
    param.foo;
    param.bar;
 
-   //good
+   // good
    import { foo, bar } from "./module";
    ```
 1. 如果模块默认输出一个函数，函数名的首字母应该小写。
