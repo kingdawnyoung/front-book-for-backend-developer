@@ -1,5 +1,5 @@
 {% raw %}
-
+<script src="http://static.jsbin.com/js/embed.min.js?4.1.1"></script>
 # Vue组件
 
 组件可认为是HTML元素的扩展，封装可重用的代码。在加高层面上，组件就是自定义元素，Vue.js编译器为它添加特殊功能。
@@ -36,7 +36,7 @@ Vue.component('custom-component', {
 
 ```js
 var child = {
-  template: '<div>A custom component!</div>'
+  template: '<div>A child component!</div>'
 }
 
 new Vue({
@@ -46,6 +46,7 @@ new Vue({
   }
 })
 ```
+<a class="jsbin-embed" href="http://jsbin.com/pisojiq/embed">定义组件</a>
 
 ## data必须是函数
 
@@ -62,6 +63,7 @@ Vue.component('custom-component', {
 });
 ```
 
+
 ## 组件组合
 
 组件涉及的初衷就是要配合使用，最常见的形式就是父子关系：组件A中在它的模版中使用了组件B。配合使用必然涉及到组件间的通信，定义良好的接口尽可能将父子组件件解耦就是非常重要，这就保证每个组件在相对隔离的环境中书写和理解，从而保证组件的可维护性和复用性。
@@ -72,7 +74,7 @@ Vue.component('custom-component', {
 
 ## 使用Prop传递数据
 
-组件实例的作用域是孤立的。这就意味着不能在植株间的模版内直接引用父组件的数据。父组件的数据需要通过prop才能下发到子组件。
+组件实例的作用域是孤立的。这就意味着不能在子组件间的模版内直接引用父组件的数据。父组件的数据需要通过prop才能下发到子组件。
 
 子组件也要显示的用`props`声明它预期的数据：
 
@@ -113,7 +115,7 @@ person: {
 <child v-bind:name='person.name'></child>
 ```
 
-Prop是单向数据绑定，父组件属性变化将传导给子组件，但是反过来不会。这是为了防止植株间无意间修改了父组件状态，来避免应用数据流变得难以理解。
+Prop是单向数据绑定，父组件属性变化将传导给子组件，但是反过来不会。这是为了防止子组件间无意间修改了父组件状态，来避免应用数据流变得难以理解。
 
 例外，每次父组件更新时，子组件的所有prop都会更新为最新值，这也意味着不应该在子组件内部改变prop。
 
@@ -146,7 +148,7 @@ computed: {
 
 >> 在JavaScript中对象和数组是引用数据类型，指向同一个内存空间，如果prop是一个对象或数组，子组件内部改变它的会影响副主见的状态
 
-Prop可以指定验证规则，如果传入的数据不满足要求，Vue会翻出警告
+Prop可以指定验证规则，如果传入的数据不满足要求，Vue会发出警告
 
 ```js
 props: {
@@ -437,4 +439,5 @@ bus.$on("trigger", function(param){
   {{text}}, 我是父组件的content
 </div>
 ```
+
 {% endraw %}
