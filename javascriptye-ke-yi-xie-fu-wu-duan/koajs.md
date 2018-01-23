@@ -61,6 +61,52 @@ method: GET status: 200 spend:2ms
 验证权限中间件继续执行
 ```
 
+## Application
+
+Koa Application 是一个包含一系列中间件函数的对象，这些中间件函数根据请求以堆栈的方式组成和执行
+
+**配置**
+
+* `app.env` 环境，默认是`NODE_ENV`或者"development"
+* `app.proxy` 当`true`的时候，代理的header信息将被信任
+* `app.subdomainOffset` 子域名
+
+**app.listen(...)**
+
+监听请求
+
+**app.callback()**
+
+返回`http.createServer()`的回调方法
+
+**app.use**
+
+在应用中使用中间件
+
+**app.keys=**
+
+设置签名的Cookie密钥。
+
+**app.context**
+
+`ctx`的原型，通过编辑`app.context`你可以扩展`ctx`属性
+
+```js
+app.context.db = db();
+
+app.use(async ctx => {
+  console.log(ctx.db);
+});
+```
+
+**错误处理**
+
+```js
+app.on('error', (err, ctx) => {
+  log.error('server error', err, ctx)
+});
+```
+
 ## Context
 
 Koa Context将Node的`request`和`response`对象包含进一个对象对象中，并且提供一些有用的方法来写web应用和API。
