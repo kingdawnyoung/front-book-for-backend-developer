@@ -42,7 +42,9 @@
     * [vue组件(补)](zu-jian-hua-kai-fa/vueji-chu/vue-components-append.md)
     * [Vuex](zu-jian-hua-kai-fa/vueji-chu/vuex.md)
     * [vue-router](zu-jian-hua-kai-fa/vueji-chu/vue-router.md)
-* [element-ui 一套完整的组件库](zu-jian-hua-kai-fa/element-ui.md)
+    * [element-ui 一套完整的组件库](zu-jian-hua-kai-fa/vueji-chu/element-ui.md)
+* react
+    * [开启React之旅](zu-jian-hua-kai-fa/react/up-and-running.md)
 
 ## 服务端的JavaScript
 * [Hello node.js](javascriptye-ke-yi-xie-fu-wu-duan/nodejsle-mei.md)
