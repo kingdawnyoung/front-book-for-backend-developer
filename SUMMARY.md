@@ -71,5 +71,6 @@
 * [String的方法](appendix/string-method.md)
 * [JavaScript原型](appendix/javascript-prototype.md)
 * [理解JavaScript的作用域和上下文](appendix/contextAndScope.md)
+* [JavaScript 事件循环](appendix/javascript-event-loop.md)
 * [编程风格](appendix/coding-style.md)
 
