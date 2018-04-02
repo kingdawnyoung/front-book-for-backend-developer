@@ -4,32 +4,35 @@
 
 1. 变量在声明后才可以使用
 1. 多个变量同时声明，使用逗号( `,` )隔开，每个变量另起一行，最后一个变量后添加分号( `;` )
-   ```js
-   let foo,
-     bar;
-   ```
+
+```js
+let foo,
+  bar;
+```
+
 1. 变量命名应当采用驼峰命名格式，普通变量的第一个单词应当是一个名词，函数名第一个单词应当是动词
-   ```js
-    let dialogShow = true;
 
-    function search() {
-      // do something
-    }
-   ```
+```js
+let dialogShow = true;
+
+function search() {
+  // do something
+}
+```
 1. 初始化一个值尽量使用字面量
-   ```js
-   //good
-   let str = '',
-     obj = {},
-     arr = [],
-     bool = true;
+```js
+//good
+let str = '',
+  obj = {},
+  arr = [],
+  bool = true;
 
-   //bad
-   let str = new String(),
-     obj = new Object(),
-     arr = new Array(),
-     bool = new Boolean()
-   ```
+//bad
+let str = new String(),
+  obj = new Object(),
+  arr = new Array(),
+  bool = new Boolean()
+```
 1. 函数声明
    * 尽量使用声明式，因为这样函数会提升，保证在使用时就已经声明
    * 函数名和开始圆括号之间不应当有空格。
@@ -38,11 +41,11 @@
    * 开始和结束括号之间不应该有空格。
    * 参数名之间应当在逗号之后保留一个空格。
    * 函数体应当保持一级缩进。
-   ```js
+    ```js
     function fn() {
       // do something
     }
-   ```
+    ```
 1. 多行对象声明
    * 起始左大括号应当同表达式保持同一行。
    * 每个属性的名值对应当保持一个缩进（两个空格），第一个属性应当在左大括号后另起一行。
@@ -50,7 +53,7 @@
    * 倘若属性值是函数类型，函数体应当在属性名之下另起一行
    * 结束的右大括号应当独占一行。
    * 对象作为函数参数时，起始大括号应当同函数名一行
-   ```js
+    ```js
     let obj = {
       foo: 'foo',
       bar: 'bar',
@@ -58,14 +61,14 @@
         // do something
       },
     };
-   ```
+    ```
 
 1. 严格模式应当仅限于在函数内部使用 `'use strict'`
-   ```js
+    ```js
    (function(){
      'use strict'
    })();
-   ```
+    ```
 
 1. 使用两个空格替代制表符的缩进，保证在不同编辑器有相同表现
 1. 运算符前后必须使用一个空格来保持表达式的整洁

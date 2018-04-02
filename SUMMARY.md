@@ -16,7 +16,7 @@
     * [Symbol](javascriptru-ge-men/symbo.md)
     * [Set和Map](javascriptru-ge-men/sethe-map.md)
     * [迭代器](javascriptru-ge-men/iterator.md)
-    * [generators](javascriptru-ge-men/generators.md)
+    * [Generator](javascriptru-ge-men/generators.md)
     * [类和继承](javascriptru-ge-men/lei.md)
     * [Proxy和Relflect](javascriptru-ge-men/proxyhe-relflect.md)
     * [Promise](javascriptru-ge-men/promise.md)
@@ -69,6 +69,7 @@
 ## 附录
 * [数组splice和slice](appendix/spliceAndSlice.md)
 * [String的方法](appendix/string-method.md)
+* [JavaScript原型](appendix/javascript-prototype.md)
 * [理解JavaScript的作用域和上下文](appendix/contextAndScope.md)
 * [编程风格](appendix/coding-style.md)
 
