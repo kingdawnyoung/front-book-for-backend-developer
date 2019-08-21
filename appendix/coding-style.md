@@ -98,13 +98,13 @@ let str = new String(),
    b != c;
    ```
 1. 三元操作符应当仅仅用在条件赋值语句中，不要作为`if`语句的替代品
-  ```js
-  // good
-  let a = condition ? c : d;
+   ```js
+   // good
+   let a = condition ? c : d;
 
-  // bad
-  let a = condition ? fn1() : fn2();
-  ```
+   // bad
+   let a = condition ? fn1() : fn2();
+   ```
 1. 每一行一条语句，所有简单的语句都应该以分号（;）结束
 1. 避免使用 `for...in` 遍历数组，推荐使用 `for(;;)` 遍历数组
 1. 避免在非函数的代码块中声明函数函数
@@ -367,7 +367,7 @@ let str = new String(),
 
    const arr = null;
    (arr || []).length ? arr[0] : '';
-  ```
+   ```
 1. 尽量不要在循环中使用组件，否则会增加`vue`等对组件的管理负担。
 1. 提交表单时加`loading`避免重复提交; 有时为了防止重复点击可以在点击事件处理上加`throttle`节流。
 
